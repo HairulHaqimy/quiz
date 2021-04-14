@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Laptop2 {
@@ -7,44 +6,48 @@ public class Laptop2 {
      double storage ;
      
      Scanner s = new Scanner(System.in);
+
+	//setter
+     
+     public void setColour() {
+	 System.out.println("Enter laptop colour");
+	 this.colour = s.nextLine();
+	}
+
+	public void setBrand() {
+	System.out.println("Enter laptop brand");
+	this.brand = s.nextLine();
+		
+	}
+
+	public void setStorage() {
+	System.out.println("Enter laptop storage");
+	this.storage = s.nextDouble();
+		
+	}
+
+	//getter
 	
-    public void specification() {
-    	 
-    	 System.out.println("Enter Brand, colour and storage : ");
-    	 String a = s.nextLine();
-    	 String b = s.nextLine();
-    	 double c = s.nextDouble();
-    	 
-    	 System.out.println("Laptop brand > " + a );
-    	 System.out.println("Colour > " + b );
-    	 System.out.println("Laptop storage > " + c + " GB ");
-    	 
-     }
-    	 
-     
-    	 void Quantity() {
-       	  System.out.println("Enter the price : RM ");
-       	  double d = s.nextDouble();
-         	  System.out.println("Enter the quantity : ");
-         	  int phone = s.nextInt();
-         	
-             int totalItem = (int) (phone * d) ;
-             System.out.println("Total price item : RM " + totalItem); 
-             System.out.println("\n--next--");
-         }
-     
-     
-    	 void totalPrice() {
-    			System.out.println("How many laptop do you want to buy?");
-    			int quantity = s.nextInt();
-    			System.out.println("Enter the price");
-    			double money = s.nextDouble();
-    			double totalPrice = quantity*money;
-    			System.out.println("Total price of the laptop:"+ totalPrice);
-     
-     
-     
-     }
+	public String getColour() {
+	return this.colour;
+	
+	}
+
+	public String getBrand() {
+	return this.brand;
+	
+	}
+
+	public Double getStorage() {
+	return this.storage;
+	
+	}
+	
+   
+}
+
+
+	
 
 
 
