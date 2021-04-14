@@ -5,12 +5,12 @@ public class Main2 {
 		
 			Laptop2 Asus = new Laptop2();
 			
-			Asus.setColour("Silver");
-			Asus.setBrand("Asus");
-			Asus.setStorage(65.0);
+			Asus.setColour();
+			Asus.setBrand();
+			Asus.setStorage();
 			
 			
-			System.out.println(" Asus ");
+			System.out.println( Asus );
 			System.out.println("Colour: " + Asus.getColour());
 			System.out.println("Brand: " + Asus.getBrand());
 			System.out.println("Storage: " + Asus.getStorage() + "gb");
@@ -19,9 +19,9 @@ public class Main2 {
 			
 			Laptop2 Lenovo = new Laptop2();
 			
-			Lenovo.setColour("Black");
-			Lenovo.setBrand("Lenovo");
-			Lenovo.setStorage(45.0);
+			Lenovo.setColour();
+			Lenovo.setBrand();
+			Lenovo.setStorage();
 			
 			
 			System.out.println(" Lenovo ");
@@ -33,3 +33,4 @@ public class Main2 {
 	}
 
 }
+
